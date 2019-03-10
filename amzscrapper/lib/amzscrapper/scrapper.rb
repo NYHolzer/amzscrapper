@@ -7,4 +7,9 @@ html = open(site,  "User-Agent" => "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Ap
 
 doc = Nokogiri::HTML(html)
 
-puts doc
+#:asin
+#:title = doc.css("div.a-section.a-spacing-none.a-spacing-top-small").first.css("h5").text
+#:price
+
+binding.pry
+puts doc.css(".sg-col-4-of-24 sg-col-4-of-12 sg-col-4-of-36 s-result-item sg-col-4-of-28 sg-col-4-of-16 sg-col sg-col-4-of-20 sg-col-4-of-32")
