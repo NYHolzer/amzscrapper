@@ -1,6 +1,2 @@
-require "amzscrapper/version"
-
-module Amzscrapper
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative 'amzscrapper/version'
+require_relative 'amzscrapper/cli'
